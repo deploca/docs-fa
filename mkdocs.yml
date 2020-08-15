@@ -1,11 +1,33 @@
 site_name: مستندات فنی دیپلوکا
+site_author: گروه فنی و توسعه دیپلوکا
+copyright: "Copyright &copy; 2019 - 2020 Deploca"
+site_url: https://deploca.com
 
 repo_url: https://github.com/deploca/docs-fa
 repo_name: deploca/docs-fa
 
+nav:
+  - index.md
+  - راهنمای کاربری:
+    - customers/register.md
+    - customers/marketplace.md
+  - راهنمای توسعه دهندگان:
+    - developers/getting-started.md
+    - developers/definitions.md
+    - developers/urls-and-domains.md
+    - developers/package.md
+    - developers/docker-file.md
+    - developers/service-discovery.md
+    - developers/integ-github.md
+    - developers/cli.md
+    
 theme:
   name: material
   language: fa
+  favicon: "//assets.deploca.com/favicon.ico"
+  logo: "//assets.deploca.com/img/brand-48.png"
+#  features:
+#    - tabs
   font:
     text: IRANSans
     code: Roboto Mono
@@ -15,7 +37,7 @@ theme:
     accent: pink
 
 extra_css:
-  - https://deploca.com/fonts/iransans/css/iransans.css
+  - https://assets.deploca.com/fonts/iransans/css/iransans.css
 
 extra:
   social:
@@ -25,3 +47,29 @@ extra:
     - name: Deploca on LinkedIn
       icon: fontawesome/brands/linkedin
       link: https://github.com/deploca
+
+markdown_extensions:
+#   - toc:
+#       permalink: "#"
+#   - smarty
+#   - admonition
+#   - attr_list
+  - footnotes
+#   - codehilite
+#   - pymdownx.arithmatex
+#   - pymdownx.betterem:
+#       smart_enable: all
+#   - pymdownx.caret
+#   - pymdownx.critic
+#   - pymdownx.details
+#   - pymdownx.emoji:
+#       emoji_generator: !!python/name:pymdownx.emoji.to_svg
+#   - pymdownx.inlinehilite
+#   - pymdownx.magiclink
+#   - pymdownx.mark
+#   - pymdownx.smartsymbols
+  - pymdownx.superfences
+#   - pymdownx.tasklist:
+#       custom_checkbox: true
+#   - pymdownx.tilde
+#   - fontawesome_markdown
